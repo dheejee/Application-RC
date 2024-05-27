@@ -9,7 +9,7 @@ from PIL import Image
 
 
 ##### DATA PREP
-data = pd.read_csv(r'C:\Users\djafp\OneDrive\Documents\Applications\data.csv')
+data = pd.read_csv('data.csv')
 data.columns = data.columns.str.lower().str.replace(' ', '_')
 data['order_date'] = pd.to_datetime(data['order_date'])
 numeric_columns = ['sold_price_item_a', 'sold_price_item_b', 'list_price_item_a', 'list_price_item_b', 'total_item_a_discount', 'total_item_b_discount', 'overall_total_discount']
@@ -262,7 +262,7 @@ elif my_page=='Diagnostic Analysis':
     "You have been hired as a Senior Data Analyst to work in a bank. Your first assignment is to join your team in using analytics for the early detection of credit card fraud."
     "You have been given a database that contains all the credit card transaction details for the users."
     
-    im2 = Image.open(r'C:\Users\djafp\OneDrive\Documents\Applications\RingCentral_Fraud_Detection.png')
+    im2 = Image.open('RingCentral_Fraud_Detection.png')
     st.image(im2)
     
     if option == 'Diagnostic Analysis Q1':
@@ -286,7 +286,7 @@ elif my_page=='Diagnostic Analysis':
     elif option == 'Diagnostic Analysis Q3':
         st.markdown("##### 3. Identify 2 irregularities that would lead you to believe the transaction may be suspect. ")
         
-        im3 = Image.open(r'C:\Users\djafp\OneDrive\Documents\Applications\suspicious_transactions.png')
+        im3 = Image.open('suspicious_transactions.png')
         st.image(im3)
         
         " The two transactions above look suspicious."
@@ -297,7 +297,7 @@ elif my_page=='Diagnostic Analysis':
     elif option == 'Diagnostic Analysis Q4':
         st.markdown("##### 4. Explain the provided data visualization chart. ")
         
-        im1 = Image.open(r'C:\Users\djafp\OneDrive\Documents\Applications\value_per_transaction.png')
+        im1 = Image.open('value_per_transaction.png')
         st.image(im1)
         
         " The visualization shows the amount (in USD) of the transactions made by the 3 users johnp, davidg, and ellend. davidg's transactions are consistent all throughout. For ellend, there is spike in the transaction amount that could signal possibility of fraud. For johnp, his last 3 transactions have a significant increase in amount. " 
