@@ -286,7 +286,7 @@ elif my_page=='Diagnostic Analysis':
     elif option == 'Diagnostic Analysis Q3':
         st.markdown("##### 3. Identify 2 irregularities that would lead you to believe the transaction may be suspect. ")
         
-        im3 = Image.open('suspicious_transactions.png')
+        im3 = Image.open('suspicious_transactions.PNG')
         st.image(im3)
         
         " The two transactions above look suspicious."
@@ -297,7 +297,7 @@ elif my_page=='Diagnostic Analysis':
     elif option == 'Diagnostic Analysis Q4':
         st.markdown("##### 4. Explain the provided data visualization chart. ")
         
-        im1 = Image.open('value_per_transaction.png')
+        im1 = Image.open('value_per_transaction.PNG')
         st.image(im1)
         
         " The visualization shows the amount (in USD) of the transactions made by the 3 users johnp, davidg, and ellend. davidg's transactions are consistent all throughout. For ellend, there is spike in the transaction amount that could signal possibility of fraud. For johnp, his last 3 transactions have a significant increase in amount. " 
