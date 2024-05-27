@@ -3,8 +3,8 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 import plotly.graph_objects as go
-import plotly.offline as pyo
-pyo.init_notebook_mode()
+# import plotly.offline as pyo
+# pyo.init_notebook_mode()
 from PIL import Image
 
 
